@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="10dp"
+        android:text="@string/app_name"
+        android:textSize="35sp" />
+
+
+    <EditText
+        android:id="@+id/input_field"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/app_name"
+        android:layout_centerHorizontal="true"
+        android:inputType="number"
+        android:hint="@string/input_hint"/>
+
+    <RelativeLayout
+        android:id="@+id/actionButtonWrapper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/input_field"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="25dp">
+
+        <Button
+            android:id="@+id/buttonConvert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/buttonConvert"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="15dp"
+            android:shadowColor="@color/black"
+            android:text="@string/button_convert"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/buttonReset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:background="@color/buttonReset"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="15dp"
+            android:text="@string/button_reset"
+            android:textSize="25sp" />
+
+        <RelativeLayout
+            android:id="@+id/resultWrapper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttonReset"
+            android:layout_marginTop="25dp"
+            android:background="@color/buttonConvert"
+            android:padding="25dp">
+
+
+            <!-- Kilometre -->
+            <TextView
+                android:id="@+id/textKilometre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_km"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/kilometre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="@string/text_result_empty"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+
+
+            <!-- Centimetre -->
+            <TextView
+                android:id="@+id/textCentimetre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textKilometre"
+                android:text="@string/text_cm"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/centimetre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/kilometre"
+                android:layout_alignParentRight="true"
+                android:text="@string/text_result_empty"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+
+
+            <!-- Miles -->
+            <TextView
+                android:id="@+id/textMile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textCentimetre"
+                android:text="@string/text_miles"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/mile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/centimetre"
+                android:layout_alignParentRight="true"
+                android:text="@string/text_result_empty"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+
+
+            <!-- Yards -->
+            <TextView
+                android:id="@+id/textYard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textMile"
+                android:text="@string/text_yards"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/yard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mile"
+                android:layout_alignParentRight="true"
+                android:text="@string/text_result_empty"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+
+
+            <!-- Feet -->
+            <TextView
+                android:id="@+id/textFoot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textYard"
+                android:text="@string/text_feet"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/feet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/yard"
+                android:layout_alignParentRight="true"
+                android:text="@string/text_result_empty"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textAuthor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/resultWrapper"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="@string/author"
+            android:textSize="40sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
