@@ -10,13 +10,14 @@
     <!-- Text fields -->
     <string name="text_km">Kilometre</string>
     <string name="text_cm">Centimetre</string>
-    <string name="text_miles">Miles</string>
-    <string name="text_yards">Yards</string>
+    <string name="text_mile">Mile</string>
+    <string name="text_yard">Yard</string>
     <string name="text_feet">Feet</string>
-
-    <string name="text_result_empty">00.00</string>
 
     <!-- Hints -->
     <string name="input_hint">Input number (cm)</string>
+
+    <!-- Custom -->
+    <string name="text_result_empty">00.00</string>
 
 </resources>

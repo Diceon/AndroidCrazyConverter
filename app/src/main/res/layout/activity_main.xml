@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/appBackground"
     tools:context=".MainActivity">
 
 
@@ -11,7 +12,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginVertical="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
         android:text="@string/app_name"
         android:textSize="35sp" />
 
@@ -22,26 +24,32 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/app_name"
         android:layout_centerHorizontal="true"
-        android:inputType="number"
-        android:hint="@string/input_hint"/>
+        android:autofillHints="number"
+        android:hint="@string/input_hint"
+        android:inputType="numberDecimal"
+        android:textColorHint="#111111"
+        android:theme="@android:style/Widget.Holo.EditText" />
 
     <RelativeLayout
         android:id="@+id/actionButtonWrapper"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/input_field"
-        android:layout_marginHorizontal="10dp"
-        android:layout_marginTop="25dp">
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="10dp">
 
         <Button
             android:id="@+id/buttonConvert"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@color/buttonConvert"
-            android:paddingHorizontal="10dp"
-            android:paddingVertical="15dp"
-            android:shadowColor="@color/black"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="@color/buttonConvertBackground"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
             android:text="@string/button_convert"
+            android:textColor="@color/buttonConvert"
             android:textSize="25sp" />
 
         <Button
@@ -49,10 +57,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
-            android:background="@color/buttonReset"
-            android:paddingHorizontal="10dp"
-            android:paddingVertical="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="@color/buttonResetBackground"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
             android:text="@string/button_reset"
+            android:textColor="@color/buttonReset"
             android:textSize="25sp" />
 
         <RelativeLayout
@@ -61,7 +72,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/buttonReset"
             android:layout_marginTop="25dp"
-            android:background="@color/buttonConvert"
+            android:background="@color/resultBackground"
             android:padding="25dp">
 
 
@@ -78,7 +89,7 @@
                 android:id="@+id/kilometre"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
                 android:text="@string/text_result_empty"
                 android:textColor="@color/black"
                 android:textSize="25sp" />
@@ -99,7 +110,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/kilometre"
-                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
                 android:text="@string/text_result_empty"
                 android:textColor="@color/black"
                 android:textSize="25sp" />
@@ -111,7 +122,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/textCentimetre"
-                android:text="@string/text_miles"
+                android:text="@string/text_mile"
                 android:textColor="@color/black"
                 android:textSize="25sp" />
 
@@ -120,7 +131,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/centimetre"
-                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
                 android:text="@string/text_result_empty"
                 android:textColor="@color/black"
                 android:textSize="25sp" />
@@ -132,7 +143,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/textMile"
-                android:text="@string/text_yards"
+                android:text="@string/text_yard"
                 android:textColor="@color/black"
                 android:textSize="25sp" />
 
@@ -141,7 +152,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/mile"
-                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
                 android:text="@string/text_result_empty"
                 android:textColor="@color/black"
                 android:textSize="25sp" />
@@ -162,7 +173,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/yard"
-                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
                 android:text="@string/text_result_empty"
                 android:textColor="@color/black"
                 android:textSize="25sp" />

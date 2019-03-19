@@ -44,10 +44,10 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                int userInputValue;
+                double userInputValue;
 
                 try {
-                    userInputValue = Integer.parseInt(userInput.getText().toString());
+                    userInputValue = Double.parseDouble(userInput.getText().toString());
                 } catch (Exception ex) {
                     userInputValue = 0;
                     Context context = getApplicationContext();

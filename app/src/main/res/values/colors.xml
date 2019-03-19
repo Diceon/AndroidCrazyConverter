@@ -1,10 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- General -->
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
 
+    <!-- Buttons -->
+    <color name="buttonConvert">#333333</color>
+    <color name="buttonConvertBackground">#57fd52</color>
+    <color name="buttonReset">#FFFFFF</color>
+    <color name="buttonResetBackground">#ff4141</color>
+
+    <!-- Layout -->
+    <color name="appBackground">#FBFBFB</color>
+    <color name="resultBackground">#A2FD9A</color>
+
+    <!-- Custom -->
     <color name="black">#000000</color>
-    <color name="buttonConvert">#00F000</color>
-    <color name="buttonReset">#FFA500</color>
+    <color name="white">#FFFFFF</color>
+    <color name="red">#FF0000</color>
+    <color name="semiBlack">#111111</color>
+
 </resources>
